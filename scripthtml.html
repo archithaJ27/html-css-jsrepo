@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body id="body">
+     <!-- <button onclick="myName()">click me</button>
+    <button onclick="dark()">Dark Mode</button>
+    <button onclick="light()">Light Mode</button>
+
+    <h1 id="h1">Hii</h1> -->
+
+    <div class="container">
+        <header>
+            <img src="image/image copy 6.png"/>
+            <h1>Shipping List</h1>
+        </header>
+        <form id="item-form">
+            <div class="form-control">
+                <input type="text"
+                class="form-input"
+                name="item"
+                placeholder="Enter Item" 
+                />
+            </div>
+            <div class="form-control">
+                <button type="submit" class="btn">
+                    <i class="fa-solid fa-plus">Add Item</i>
+                </button>
+            </div>
+        </form>
+        <div class="filter">
+            <input
+            type="text"
+            class="form-input-filter"
+            placeholder="Filter Items"
+            />
+        </div>
+        <ul id="item-list" class="item">
+            <li>
+                Apples
+                <button class="remove-item btn-link text-red"><i class="fa-solid fa-xmark"></i></button>
+            </li>
+            <li>
+                Bananas
+                <button class="remove-item btn-link text-red"><i class="fa-solid fa-xmark"></i></button>
+            </li>
+            <li>
+                Mangos
+                <button class="remove-item btn-link text-red"><i class="fa-solid fa-xmark"></i></button>
+            </li>
+            <li>
+                Grapes
+                <button class="remove-item btn-link text-red"><i class="fa-solid fa-xmark"></i></button>
+            </li>
+            <li>
+                Oranges
+                <button class="remove-item btn-link text-red"><i class="fa-solid fa-xmark"></i></button>
+            </li>
+            <li>
+                Guavas
+                <button class="remove-item btn-link text-red"><i class="fa-solid fa-xmark"></i></button>
+            </li>
+            <li>
+                Muskmelons
+                <button class="remove-item btn-link text-red"><i class="fa-solid fa-xmark"></i></button>
+            </li>
+        </ul>
+        
+        <button id="clear" class="btn">Clear Items</button>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

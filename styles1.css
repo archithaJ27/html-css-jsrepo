@@ -1,0 +1,160 @@
+h1{
+    background-color: rgb(236, 148, 222);  
+}
+body{
+    background-color: rgb(189, 220, 244);
+}
+
+.navbar {
+   background-color: black;  /* Black background */
+   padding: 15px 0;  /* Add padding */
+   text-align: center;  /* Center the nav */
+}
+
+/* Remove default list styling */
+.navbar ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+/* Make links horizontal */
+.navbar ul a {
+   text-decoration: none;
+   color: white;  /* White text */
+   font-size: 18px;
+   padding: 15px 20px; /* Spacing */
+   display: inline-block; /* Keep in a row */
+}
+
+/* Hover effect */
+.navbar ul a:hover {
+   background-color: gray;
+   border-radius: 5px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 columns */
+    gap: 20px; /* Space between images */
+    padding: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.about-section{
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: justify;
+}
+ .about-section p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+ }
+
+ .contact-section{
+    padding: 2rem;
+    text-align: center;
+ }
+ .contact-form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    font-weight: bold;
+ }
+ .contact-form input, .contact-form textarea, .contact-form button{
+    width: 1005;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+ }
+
+ .contact-form button{
+    background-color: rgb(4,140,213);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform .5s;
+ }
+ .contact-form button:hover{
+    transform: scale(1.05);
+ }
+ .footer{
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+ }
+ .footer-links a{
+color: rgb(4,140,213);
+text-decoration: none;
+margin: 0 5px;
+ }
+
+ .footer-links a:hover{
+    text-decoration: unset;
+    background-color: white;
+ }
+ .fa-facebook{
+    background-color: white;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+ }
+ .fa-instagarm{
+    /* background-color: white; */
+    padding: 5px;
+    color: rgb(243, 17, 175);
+    font-size: 18px;
+    border-radius: 5px;
+ }
+ .fa-x-twitter{
+    background-color: white;
+    padding: 5px;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+
+ }
+ .fa-youtube{
+    background-color: white;
+    padding: 5px;
+    color: red;
+    font-size: 18px;
+    border-radius: 5px;
+ }
+ @media (max-width : 1200px){
+    .product-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+ }
+ @media (max-width : 768px){
+    .product-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+ }
+ @media (max-width : 480px){
+    .product-comtainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+ }
+
